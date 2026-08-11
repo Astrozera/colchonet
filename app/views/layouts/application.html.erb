@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
     <title><%= content_for(:title) || "Colchonet" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -22,6 +23,27 @@
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
+  <header> 
+    <div id="header-wrap">
+      <h1><%= link_to "colcho.net", root_path %> </h1>
+      <nav>
+        <ul> 
+          <li><%= link_to "quartos", rooms_path %> </li> 
+          <li><%= link_to "cadastro", new_user_path %> </li> 
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div>
+    <% if notice.present?%>
+      <p id= "notice"><%=notice%></p>
+    <%end%>
+    <% if alert.present?%>
+      <p id="alert"> <%=alert%></p>
+    <%end%>
+  </div>
+
 
   <body>
     <%= yield %>

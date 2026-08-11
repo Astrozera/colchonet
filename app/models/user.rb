@@ -7,6 +7,7 @@ class User < ApplicationRecord
   validates :email, uniqueness: true
 
   validate :email_format
+  has_secure_password
 
   private
 

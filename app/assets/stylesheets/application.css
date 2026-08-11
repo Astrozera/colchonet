@@ -8,3 +8,124 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+#content {
+  text-align: left;
+  width: 800px;
+  margin: 0 auto;
+}
+
+#content h1 {
+  font-size: 1.5em;
+}
+
+#content a,
+#content a:visited,
+#content a:hover {
+  color: #242;
+}
+
+#content a:hover {
+  text-decoration: underline;
+}
+
+#content ul,
+#content form,
+#content p {
+  margin: 10px 0;
+}
+
+form label {
+  display: block;
+  margin: 5px 0;
+  color: #444;
+}
+
+form input[type="text"],
+form input[type="password"],
+form textarea {
+  color: #444;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 200px;
+  outline: 0;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form textarea:focus {
+  border: 1px solid #c9c9c9;
+}
+
+form textarea {
+  width: 400px;
+  height: 200px;
+}
+
+.field_with_errors {
+  display: inline;
+}
+
+.field_with_errors label {
+  color: #b94a48;
+}
+
+.field_with_errors input[type="text"],
+.field_with_errors input[type="password"],
+.field_with_errors textarea {
+  border: 1px solid rgba(189, 74, 72, 0.5);
+  box-shadow: 0 0 8px rgba(189, 74, 72, 0.2);
+}
+
+.field_with_errors input[type="text"]:focus,
+.field_with_errors input[type="password"]:focus,
+.field_with_errors textarea:focus {
+  border: 1px solid rgba(189, 74, 72, 0.6);
+}
+
+.error_message {
+  margin-left: 5px;
+  display: inline;
+  color: #b94a48;
+}
+
+.padded_flash {
+  padding: 10px;
+  margin: 10px 0;
+  font-weight: bold;
+  width: 500px;
+}
+
+#error_explanation {
+  padding: 10px;
+  margin: 10px 0;
+  font-weight: bold;
+  width: 500px;
+
+  border: 1px solid #b94a48;
+  color: #b94a48;
+  background-color: #F2DEDE;
+}
+
+#notice {
+  padding: 10px;
+  margin: 10px 0;
+  font-weight: bold;
+  width: 500px;
+
+  color: #468847;
+  border: 1px solid #468847;
+  background-color: #DFF0D8;
+}
+
+#alert {
+  padding: 10px;
+  margin: 10px 0;
+  font-weight: bold;
+  width: 500px;
+
+  color: #b94a48;
+  border: 1px solid #b94a48;
+  background-color: #F2DEDE;
+}
